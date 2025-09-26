@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+			integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Grab Go</title>
+	</head>
+	<body>
+		<main class="main-content">
+			<nav class="navbar">
+				<div class="container">
+					<div class="logo"><i class="fa-solid fa-bars"></i> Grab <span>Go</span></div>
+					<ul class="nav">
+						<a href="#" class="btn btn-light btn-round"><i class="fa-solid fa-user"></i> Log In</a>
+						<a href="#" class="btn btn-dark btn-round ml-1">Sign Up</a>
+					</ul>
+				</div>
+			</nav>
+			<section class="showcase">
+				<div class="container">
+					<h1 class="display-1">Food at Your Fingertips</h1>
+					<form action="">
+						<div class="input-container location">
+							<i class="fa-solid fa-location-dot icon"></i>
+							<input type="text" id="location" placeholder="Enter Delivery Address" class="form-control" />
+						</div>
+						<div class="input-container deliver">
+							<i class="fa-solid fa-clock icon"></i>
+							<select id="deliver" name="deliver" class="form-control">
+								<option value="select">Deliver Now</option>
+								<option value="10">10:00AM</option>
+								<option value="11">11:00AM</option>
+								<option value="12">12:00PM</option>
+								<option value="13">1:00PM</option>
+								<option value="14">2:00PM</option>
+								<option value="15">3:00PM</option>
+							</select>
+						</div>
+						<button class="btn btn-dark">Find Food</button>
+					</form>
+					<p class="small">Sign in for your recent addresses</p>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
