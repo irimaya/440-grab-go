@@ -1,217 +1,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
 /* Reset */
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-/* Main Styling */
+/* Estilos Pricipales */
 body {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
-	color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
 }
 
 h1 {
-	font-size: 2.5rem;
-}
-h2 {
-	font-size: 2rem;
-}
-h3 {
-	font-size: 1.75rem;
-}
-h4 {
-	font-size: 1.5rem;
-}
-h5 {
-	font-size: 1.25rem;
-}
-h6 {
-	font-size: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin-bottom: 15px;
-}
-
-ul {
-	list-style: none;
-}
-
-img {
-	max-width: 100%;
-}
-
-p {
-	font-size: 1rem;
-	margin: 10px 0;
-	line-height: 1.7em;
-}
-
-a {
-	text-decoration: none;
-}
-
-/* Utility Classes */
+/* Clases Principales */
 .container {
-	max-width: 1300px;
-	margin: 0 auto;
-	padding: 0 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
-/* .large {
-	font-size: 20px;
-} */
-.small {
-	font-size: 12px;
-}
-
-.display-1 {
-	font-size: 3rem;
-}
-
-/* Button */
 .btn {
-	font-size: 15px;
-	font-weight: 600;
-	padding: 8px 20px;
-	cursor: pointer;
-	letter-spacing: 1px;
-	border-radius: 4px;
-}
-
-.btn-dark {
-	background: #000;
-	border: 1px solid #000;
-	color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius: 4px;
 }
 
 .btn-light {
-	background: #fff;
-	border: 1px solid #fff;
-	color: #000;
+  background: #fff;
+  border: 1px solid #fff;
+  color: #000;
+}
+
+.btn-dark {
+  background: #000;
+  border: 1px solid #000;
+  color: #fff;
 }
 
 .btn-round {
-	border-radius: 50px;
-}
-
-/* Navbar */
-.navbar {
-	height: 120px;
-	font-weight: 400;
-}
-
-.navbar .logo {
-	font-size: x-large;
-}
-
-.navbar .logo span {
-	font-weight: 600;
-}
-
-.navbar .container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 100%;
-}
-
-.navbar .nav {
-	display: flex;
-	gap: 10px;
+  border-radius: 50px;
 }
 
 /* Main */
 .main-content {
-	background: url('/images/background.png') no-repeat center center/cover;
-	height: 100vh;
+  background: url('/images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* Header */
+.navbar {
+  height: 120px;
+  font-weight: 400;
+}
+
+.navbar .logo {
+  font-size: x-large;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar .nav {
+  display: flex;
+  gap: 10px;
 }
 
 /* Showcase */
+.showcase .container {
+  padding-top: 180px;
+}
+
 form {
-	display: flex;
-	gap: 5px;
-	width: 70%;
+  display: flex;
+  gap: 5px;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+form .form-control {
+  display: inline;
+  width: 100%;
+  padding: 7px 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #757575;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
 }
 
 form .location {
-	flex: 3;
-	/* width: 500px; */
+  flex: 3;
 }
 
 form .deliver {
-	flex: 1;
+  flex: 1;
 }
 
-/* form button {
-	flex: 1;
-} */
-
-form .form-control {
-	display: inline;
-	width: 100%;
-	padding: 7px 12px;
-	font-size: 1rem;
-	line-height: 1.5;
-	/* color: #495057; */
-	color: #757575;
-	background-color: #fff;
-	border: none;
-	border-radius: 4px;
-}
-
-.showcase .container {
-	padding-top: 180px;
-}
-
-/* Input */
 .input-container {
-	position: relative;
-	display: inline-block;
-	/* Or block, depending on layout */
+  position: relative;
 }
 
 .input-container input,
 .input-container select {
-	padding-left: 35px;
-	/* Adjust based on icon size */
+  padding-left: 35px;
 }
 
 .input-container .icon {
-	position: absolute;
-	left: 10px; /* Adjust position */
-	top: 50%;
-	transform: translateY(-50%);
-	color: #000; /* Icon color */
-	pointer-events: none; /* Prevents icon from interfering with input focus */
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
 }
 
 .input-container select {
-	padding-top: 9px;
-	padding-bottom: 9px;
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-	.display-1 {
-		line-height: 1.2;
-	}
-
-	form {
-		width: 100%;
-		flex-direction: column;
-	}
-
-	.main-content {
-		background-position: left;
-	}
+/* Responsivo */
+@media (max-width:768px) {
+  h1 {
+    line-height: 1.2;
+  }
+  .main-content {
+    background-position: left;
+  }
+  form {
+    width: 100%;
+    flex-direction: column;
+  }
 }
